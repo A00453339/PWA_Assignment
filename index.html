@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>My First PWA app</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+    <div class="header">
+        <img src="./smu-icon-96x96.png" width="75px" />
+        <h1>Task Assignment</h1>
+    </div>
+
+    <div class="subheader"> 
+        <h2>by: - Gagandeep Singh Chadha</h2> 
+    </div>
+
+
+   
+    <hr />
+
+    <div>
+        <form>
+            <label for="taskName">Task Name</label>
+            <input type="text" id="tname" name="tname" placeholder="Task name...">
+
+            <label for="assignedTo">Assigned To</label>
+            <input type="text" id="assignedto" name="assignedto" placeholder="Assigned To">
+
+            <label for="dueDate">Due Date</label>
+            <input type="date" id="duedate" name="duedate" placeholder="DD-MM-YYYY">
+
+            <input type="submit" value="Add Task">
+        </form>
+    </div>
+
+    <hr />
+
+    <div id="students"></div>
+</body>
+
+<script src="https://unpkg.com/dexie/dist/dexie.js"></script>
+<script src="/db.js"></script>
+<script src="/script.js"></script>
+
+</html>
